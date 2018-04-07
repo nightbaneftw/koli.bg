@@ -1,0 +1,14 @@
+preprodavane na koli 
+tursachkata za nachalnata stranica - marka, model, dvigatel, skorostna kutiq, kraina cena, grad
+navigaciq za vsichki stranici
+1 - index page - naviciq, logo, slogan, snimka, search, posledni obqvi - https://imgur.com/a/f5Uj8
+2 - result page - search page otiva v lqvo + se zapisvat + rezultatite otivat v dqsno + ako zaseche true ot konstruktora na add advert da mu slaga neshto vurhu snimkata
+3 - advanced search page - 10-20 raboti ot saitovete
+4 - register - display: none i pri event click stava display: block possition: absolute + z index
+5 - login-
+6 - admin page - otdelna stranica, v koqta da se vliza i da imame dostup do nastroiki (dobavqne i iztrivane na obqvi)
+7 - user page - (advert page)
+8 - item page - ot auto.bg
+9 - add advert - 
+10 - video page
+pod tursachkata imame 3 koloni - posledni obqvi, nai-gledani, vip obqvi 
