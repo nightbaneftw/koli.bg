@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <nav>
+        <ul class="container">
+            <li class="logo">
+                <div class="logo">
+                    <a href=""><img src="img/logo3D.png" alt=""></a>
+                </div>
+            </li>
+            <li class="opt"><a href="">Пусни обява</a></li>
+            <li class="opt"><a href="">Разширено търсене</a></li>
+            <li class="opt"><a href="">Авто ревюта</a></li>
+            <li class="user"><a href="">
+                <div class="userIcon">
+                    <img src="img/user.png" alt=""></a>
+                </div>   
+            </li>
+        </ul>
+        <div class="hidden">
+            <div class="form">
+                <ul class="profile">
+                    <li><a>Логин</a></li>
+                    <li><a>Регистрация</a></li>
+                    <li><a>Моите обяви</a></li>
+                    <li><a>Други</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="bigPic">
+        <img src="img/subaru.jpg" alt="subaru">
+    </div>
+    <div class="search-h1">
+        <h1 id="search-here">ТЪРСИ В НАД 10 000 ОБЯВИ</h1>
+    </div>    
+    <main>
+    <div class="main-container">      
+        <form action="" class="search-form">
+        <div class="brand">
+              <select name="brand" id="">   
+                            <option disabled selected value="0">Марка:</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Honda</option>
+                            <option value="6">Jaguar</option>
+                            <option value="7">Land Rover</option>
+                            <option value="8">Mercedes</option>
+                            <option value="9">Mini</option>
+                            <option value="10">Nissan</option>
+                            <option value="11">Toyota</option>
+                            <option value="12">Volvo</option>
+                    </select>
+            </div>
+            <div class="model">
+                    <select name="model" id="">
+                            <option disabled selected value="0">Модел:</option>
+                            
+                    </select>
+            </div>
+            <div class="type">
+                <select name="" id="">
+                    <option disabled selected value="0">Тип:</option>
+                    <option value="1">Седан</option>
+                    <option value="2">Купе</option>
+                    <option value="3">Комби</option>
+                    <option value="3">Джип</option>
+                </select>
+            </div>
+            <div class="engine">
+                <select name="engine" id="">
+                    <option disabled selected value="0">Двигател:</option>
+                    <option value="1">Газ/Бензин</option>
+                    <option value="2">Дизел</option>
+                </select>
+            </div>
+            <div class="from-to">
+            <select name="price-from" id="">
+                    <option disabled selected value="0">Цена от:</option>
+                    <option value="1">От 1000</option>
+                    <option value="2">От 2000</option>
+                    <option value="3">От 3000</option>
+                    <option value="4">От 4000</option>
+                    <option value="5">От 5000</option>
+                    <option value="6">От 6000</option>
+                    <option value="7">От 7000</option>
+                    <option value="8">От 8000</option>
+                    <option value="9">От 9000</option>
+                    <option value="10">От 10000</option>
+                </select>
+            </div>
+            <div class="from-to">
+                <select name="price-to" id="">
+                    <option disabled selected value="0">Цена до:</option>
+                    <option value="1">До 1000</option>
+                    <option value="2">До 2000</option>
+                    <option value="3">До 3000</option>
+                    <option value="4">До 4000</option>
+                    <option value="5">До 5000</option>
+                    <option value="6">До 6000</option>
+                    <option value="7">До 7000</option>
+                    <option value="8">До 8000</option>
+                    <option value="9">До 9000</option>
+                    <option value="10">До 10000</option>
+                </select>
+            </div>
+            <div class="region">
+                <select name="region" id="">
+                    <option disabled selected value="0">Регион:</option>
+                    <option value="1">Благоевград</option>
+                    <option value="2">Бургас</option>
+                    <option value="0">Варна:</option>
+                    <option value="1">Велико Търново</option>
+                    <option value="2">Враца</option>
+                    <option value="0">Видин</option>
+                    <option value="1">Габрово</option>
+                    <option value="2">Добрич</option>
+                    <option value="0">Кърджали</option>
+                    <option value="1">Кюстендил</option>
+                    <option value="2">Ловеч</option>
+                    <option value="0">Монтана</option>
+                    <option value="1">Пазарджик</option>
+                    <option value="2">Перник</option>
+                    <option value="0">Плевен</option>
+                    <option value="1">Пловдив</option>
+                    <option value="2">Добрич</option>
+                </select>
+            </div>
+            <div class="from-to">
+                <select name="year-from" id="">
+                    <option value="0" disabled selected>Година от:</option>
+                    <option value="1">1970</option>
+                    <option value="2">1975</option>
+                    <option value="3">1980</option>
+                    <option value="4">1985</option>
+                    <option value="5">1990</option>
+                    <option value="6">1995</option>
+                    <option value="7">2000</option>
+                    <option value="8">2001</option>
+                    <option value="10">2002</option>
+                    <option value="11">2003</option>
+                    <option value="12">2004</option>
+                    <option value="13">2005</option>
+                    <option value="14">2006</option>
+                    <option value="15">2007</option>
+                    <option value="16">2008</option>
+                    <option value="17">2009</option>
+                    <option value="18">2010</option>
+                    <option value="19">2011</option>
+                    <option value="20">2012</option>
+                    <option value="21">2013</option>
+                    <option value="22">2014</option>
+                    <option value="23">2015</option>
+                    <option value="24">2016</option>
+                    <option value="25">2017</option>
+                    <option value="26">2018</option>
+                </select>
+            </div>
+            <div class="from-to">
+                <select name="year-to" id="">  
+                    <option value="0" disabled selected>Година до:</option>
+                    <option value="1">1970</option>
+                    <option value="2">1975</option>
+                    <option value="3">1980</option>
+                    <option value="4">1985</option>
+                    <option value="5">1990</option>
+                    <option value="6">1995</option>
+                    <option value="7">2000</option>
+                    <option value="8">2001</option>
+                    <option value="10">2002</option>
+                    <option value="11">2003</option>
+                    <option value="12">2004</option>
+                    <option value="13">2005</option>
+                    <option value="14">2006</option>
+                    <option value="15">2007</option>
+                    <option value="16">2008</option>
+                    <option value="17">2009</option>
+                    <option value="18">2010</option>
+                    <option value="19">2011</option>
+                    <option value="20">2012</option>
+                    <option value="21">2013</option>
+                    <option value="22">2014</option>
+                    <option value="23">2015</option>
+                    <option value="24">2016</option>
+                    <option value="25">2017</option>
+                    <option value="26">2018</option>
+                </select>
+            </div>
+            <div class="search-btn">
+                <button>ТЪРСИ</button>
+            </div>
+        </form>
+        </div>
+        
+
+    </main>
+    <footer></footer>
+    <script src="scripts.js"></script>    
+</body>
+</html>
