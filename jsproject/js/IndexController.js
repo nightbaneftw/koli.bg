@@ -1,10 +1,17 @@
 (function() {
 
+	function init() {
+		console.log('index init');
+		Troshka.initController('login');
+	}
+
+	function destroy() {
+		Troshka.destroyController('login');
+	}
+
     Troshka.registerController('index', {
-        init: function() {
-			console.log('index init');
-			Troshka.initController('login');
-        }
+		init: init,
+		destroy: destroy
 	});
 	
 })();

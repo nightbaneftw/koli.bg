@@ -1,9 +1,10 @@
 (function() {
-
+    
+    function init() {
+        console.log('about init');
+    }
 
     Troshka.registerController('about', {
-        init: function() {
-            console.log('about init');
-        }
+        init: init
     });
 })();

@@ -15,11 +15,18 @@ var Troshka = (function() {
             console.error(`${name} controller is not found!`);
         }
     }
-
-    function initController(page) {
-        var controller = getController(page);
+    
+    function initController(name) {
+        var controller = getController(name);
         if (controller && typeof controller.init === 'function') {
             controller.init();
+        }
+    }
+    
+    function destroyController(name) {
+        var controller = getController(name);
+        if (controller && typeof controller.destroy === 'function') {
+            controller.destroy();
         }
     }
 
@@ -86,6 +93,7 @@ var Troshka = (function() {
 
     function showPage(page, pageContent) {
         pageElement.classList.remove(currentPage);
+        destroyController(currentPage);
         currentPage = page;
         pageElement.classList.add(currentPage);
         updateNavigations();
@@ -135,6 +143,7 @@ var Troshka = (function() {
     return {
         registerController: registerController,
         getController: getController,
-        initController: initController
+        initController: initController,
+        destroyController: destroyController
     };
 })();
