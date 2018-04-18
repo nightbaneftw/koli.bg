@@ -101,11 +101,10 @@ nav a {
     padding: 10px 15px;
 }
 .user {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 55px;
-    transition: transform .8s ease-in-out;
+    float: right;
+    margin-right: 55px;
+    bottom: 20px;
+    position: relative
 }
 .user:hover {
     transform: rotate(360deg);
