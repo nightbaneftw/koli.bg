@@ -104,7 +104,8 @@ nav a {
     float: right;
     margin-right: 55px;
     bottom: 20px;
-    position: relative
+    position: relative;
+    transition: transform .8s ease-in-out;
 }
 .user:hover {
     transform: rotate(360deg);
