@@ -13,7 +13,9 @@ body {
 	background: -moz-linear-gradient(top, #ffffff 0%, #d5d5d5 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#d5d5d5 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 0%,#d5d5d5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d5d5',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d5d5',GradientType=0 ); /* IE6-9 */
+    min-width: 300px !important;
+ 
 }
 
 header {
@@ -24,7 +26,9 @@ header {
     /* width: 110px;
     margin: 10px auto 20px;
     height: 80px; */
-    display: inline-block;
+    float: left;
+    padding-bottom: 20px;
+    margin-left: 20px;
 }
 header .logo img {
     height: 40px;
@@ -59,7 +63,6 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    
 }
 
 nav a {
@@ -68,8 +71,16 @@ nav a {
     display: block;
 }
 
+input[name='search'] {
+    /* width: 500px; */
+    width: 80%;
+    font-size: 25px;
+    margin: 20px auto;
+    display: block;
+}
+
 header nav {
-    float: right;
+    float: left;
 }
 
 header:after {
@@ -79,23 +90,50 @@ header:after {
 }
 
 header nav li.current a{
-    color: c65afc
+    color: #c65afc
 }
 
 header nav li:hover a{
-    color: c65afc
+    color: #c65afc
 }
 
 nav a {
     padding: 10px 15px;
 }
-
 .user {
-    width: 40px;
-    height: 40px;
-    background: white;
-    float: right;
-    margin-left: 20px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 55px;
+    transition: transform .8s ease-in-out;
+}
+.user:hover {
+    transform: rotate(360deg);
+}
+
+.hidden {
+    background: #783697;
+    width: 150px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    padding-bottom: 10px;
+}
+
+.profile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile li {
+    text-align: center;
+}
+
+.profile li a{
+    color: white;
+    text-decoration: none;
 }
 
 .cols {
@@ -151,4 +189,95 @@ nav a {
 .ad-price, 
 .ad-time{
     position: relative;
+}
+
+.googleMap, .info, .media{
+    width:200px;
+    height:200px;
+    margin: 0 auto;   
+}
+.images {
+    width:64px;
+    height:200px;
+    margin: 0 auto;
+}
+
+[title~=Телефон]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 960px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 770px) {
+    .col-hide-me {
+        display: none;
+    }
+}
+
+@media all and (max-width: 540px) {
+    a.menu {
+        display: block;
+        font-size: 15px;
+    }
+    .nav-hide-me {
+        display: none;
+    }
+    .hidden-menu {
+        display: none;
+    }
+    header { 
+        height: 80px
+    }
+}
+
+@media all and (max-width: 480px) {
+    .googleMap, .info, .media{
+        width:150px;
+        height:150px;
+        margin: 0 auto;  
+    }
+    footer .wrapper {
+        height: 300px;
+    }
+    .cols .col {
+        padding: 0;
+    }
+    .media {
+        width: 125px;
+    }
+}
+
+
+.menu {
+    display: none;
+}
+.hidden-menu {
+    display: none;
+}
+
+.hidden-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    top: -27px;
+}
+
+.hidden-menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.hidden-menu li.current a{
+    color: #c65afc
+}
+
+.hidden-menu li a:hover{
+    color: #c65afc
 }

@@ -13,70 +13,78 @@
 	<header>
 		<div class="wrapper"> 
 			<div class="logo">
-				<a href="/"><img src="images/logo3D_small.png" title="Troshka"></a>
+				<a href="index.html"><img src="images/logo3D_small.png" title="Troshka"></a>
 			</div>
-			<div class="user"></div>
 			<nav>
 				<ul>
-					<li class="current"><a href="index.html">Начало</a></li>
-					<li><a href="addAd.html">Добави обява</a></li>
-					<li><a href="videos.html">Видео</a></li>
+					<li class="current nav-hide-me"><a href="index.html">Начало</a></li>
+					<li class="nav-hide-me"><a href="addAd.html">Добави обява</a></li>
+					<li class="nav-hide-me"><a href="videos.html">Видео</a></li>
+					<li><a href="menu.html" class="menu">&#9776;</a></li>
 				</ul>
 			</nav>
 		</div>
+		<div class="user">
+				<a href="/"><img src="images/user_small.png" title="Профил"></a>
+		</div>
+		<div class="hidden-menu">
+			<ul>
+				<li class="current"><a href="index.html">Начало</a></li>
+				<li><a href="addAd.html">Добави обява</a></li>
+				<li><a href="videos.html">Видео</a></li>
+			</ul>
+		</div>
+		<div class="hidden">
+			<ul class="profile">
+				<li><a href="login.html">Логин</a></li>
+				<li><a href="register.html">Регистрация</a></li>
+				<li><a href="myAds.html">Добави обяви</a></li>
+				<li><a href="addedAds.html">Добавени обяви</a></li>
+				<li><a href="favAds.html">Лябими обяви</a></li>
+				<li><a href="lastAds.html">Последни обяви</a></li>
+				<li><a href="vipAds.html">ВИП обяви</a></li>
+			</ul>
+		</div>
 	</header>
 	<main>
-		<div class="wrapper"> 
-			<h1>What is Lorem Ipsum?</h1>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<div class="wrapper">
+			<input type="text" placeholder="Search.." name="search">
+			<div class="cols">
+				<div class="col">
+					<h3>Добави обяви!</h3>
+				</div>
+				<div class="col col-hide-me">
+					<h3>Добавени обяви!</h3>
+				</div>
+				<div class="col">
+					<h3>Любими обяви!</h3>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>
 		<div class="wrapper">
 			<div class="cols">
-				<div class="col">
+				<div class="col col-hide-me">
 					<h3>Всички права запазени!</h3>
-					<p>Изработено от Руслан и Димитър за курса по javascript организиран от IT Talents</p>
+					<p class="info">Изработено от Руслан и Димитър за курса по javascript организиран от IT Talents</p>
 				</div>
 				<div class="col">
-					<h3>Последни обяви!</h3>
-					<div class="last-ads">
-						<div class="ad">
-							<div class="ad-picture"></div>
-							<div class="ad-info">
-								<div class="ad-heading">Hyundai Santa fe</div>
-								<div class="ad-price">Цена: 12 900 лв.</div>
-								<div class="ad-time">преди 1 мин</div>
-							</div>
-
-						</div>
-						<div class="ad">
-							<div class="ad-picture"></div>
-							<div class="ad-info">
-								<div class="ad-heading">Hyundai Santa fe</div>
-								<div class="ad-price">Цена: 12 900 лв.</div>
-								<div class="ad-time">преди 1 мин</div>
-							</div>
-						</div>
-					</div>
+					<h3>Местоположение!</h3>
+					<div class="googleMap"></div>
 				</div>
 				<div class="col">
-					<h3>ВИП обяви!</h3>
-					<div class="vip-ads">
-						<div class="ad">
-							<div class="ad-picture"></div>
-							<div class="ad-info">
-								<div class="ad-heading">Hyundai Santa fe</div>
-								<div class="ad-price">Цена: 12 900 лв.</div>
-								<div class="ad-time">преди 1 мин</div>
+					<h3>Контакти!</h3>
+					<div class="media">
+						<div class="images">
+							<div>
+								<a href="/"><img src="images/gmail.png" title="Е-майл"></a>
 							</div>
-						</div>
-						<div class="ad">
-							<div class="ad-picture"></div>
-							<div class="ad-info">
-								<div class="ad-heading">Hyundai Santa fe</div>
-								<div class="ad-price">Цена: 12 900 лв.</div>
-								<div class="ad-time">преди 1 мин</div>
+							<div>
+								<a href="/"><img src="images/telephone.png" title="Телефон"></a>
+							</div>
+							<div>
+								<a href="/"><img src="images/paypal.png" title="Paypal"></a>
 							</div>
 						</div>
 					</div>
@@ -84,5 +92,8 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/map.js"></script>			
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBfic-CYt3lGO1lTxhJZjOdZRHaA2sJ-o&callback=myMap"></script>
 </body>
 </html>
