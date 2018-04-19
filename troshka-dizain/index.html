@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Troshka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/owl.theme.default.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/owl.carousel.css" />
 </head>
 
 <body>
 	
 	<header>
-		<div class="wrapper"> 
-			<div class="logo">
+		<div class="logo">
 				<a href="index.html"><img src="images/logo3D_small.png" title="Troshka"></a>
-			</div>
+		</div>
+		<div class="wrapper"> 
 			<nav>
 				<ul>
 					<li class="current nav-hide-me"><a href="index.html">Начало</a></li>
-					<li class="nav-hide-me"><a href="addAd.html">Добави обява</a></li>
+					<li class="nav-hide-me"><a href="results.html">Обяви</a></li>
 					<li class="nav-hide-me"><a href="videos.html">Видео</a></li>
 					<li><a href="menu.html" class="menu">&#9776;</a></li>
 				</ul>
@@ -30,7 +32,7 @@
 		<div class="hidden-menu">
 			<ul>
 				<li class="current"><a href="index.html">Начало</a></li>
-				<li><a href="addAd.html">Добави обява</a></li>
+				<li><a href="results.html">Обяви</a></li>
 				<li><a href="videos.html">Видео</a></li>
 			</ul>
 		</div>
@@ -48,16 +50,60 @@
 	</header>
 	<main>
 		<div class="wrapper">
-			<input type="text" placeholder="Search.." name="search">
-			<div class="cols">
-				<div class="col">
-					<h3>Добави обяви!</h3>
+				<input type="text" placeholder="Търсене.." name="search">
+			<div class="adv-search-container">
+				<p class="adv-search">Разширено търсене</p>
+			</div>
+			<div class="hidden-container">
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				<p>Разширено търсене</p>
+				
+			</div>
+			<h4>Последни Обяви</h4>
+			<div class="owl-carousel owl-theme">
+				<div class="last-ads">
+					<div class="ad">
+						<div class="ad-picture"></div>
+						<div class="ad-info">
+							<div class="ad-heading">Hyundai Santa fe </div>
+							<div class="ad-price">Цена: 12 900 лв.</div>
+							<div class="ad-time">преди 1 мин</div>
+						</div>
+					</div>
 				</div>
-				<div class="col col-hide-me">
-					<h3>Добавени обяви!</h3>
+			</div>
+			<h4>ВИП Обяви</h4>
+			<div class="owl-carousel owl-theme">
+				<div class="vip-ads">
+					<div class="ad">
+						<div class="ad-picture"></div>
+						<div class="ad-info">
+							<div class="ad-heading">Hyundai Santa fe</div>
+							<div class="ad-price">Цена: 12 900 лв.</div>
+							<div class="ad-time">преди 1 мин</div>
+						</div>
+					</div>
 				</div>
-				<div class="col">
-					<h3>Любими обяви!</h3>
+			</div>
+			<h4>Най-преглеждани Обяви</h4>
+			<div class="owl-carousel owl-theme">
+				<div class="fav-ads">
+					<div class="ad">
+						<div class="ad-picture"></div>
+						<div class="ad-info">
+							<div class="ad-heading">Hyundai Santa fe</div>
+							<div class="ad-price">Цена: 12 900 лв.</div>
+							<div class="ad-time">преди 1 мин</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -86,6 +132,9 @@
 							<div>
 								<a href="/"><img src="images/paypal.png" title="Paypal"></a>
 							</div>
+							<!-- <div>
+								<a href="/"><img src="images/paypal.png" title="Paypal"></a>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -93,6 +142,8 @@
 		</div>
 	</footer>
 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/map.js"></script>			
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBfic-CYt3lGO1lTxhJZjOdZRHaA2sJ-o&callback=myMap"></script>
 </body>

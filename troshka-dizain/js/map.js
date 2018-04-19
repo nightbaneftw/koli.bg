@@ -11,6 +11,25 @@ var hiddenDiv = document.querySelector(".hidden");
 var userIcon = document.querySelector(".user");
 var menu = document.querySelector(".menu");
 var hiddenMenu = document.querySelector(".hidden-menu");
+var input = document.querySelector('input[name="search"]');
+var advSearch = document.querySelector(".adv-search");
+var hiddenContainer = document.querySelector(".hidden-container");
+
+advSearch.addEventListener("click", function(event) {
+    if (hiddenContainer.style.display === "block") {
+        event.preventDefault();
+        hiddenContainer.style.display = "none";
+    } else {
+        event.preventDefault();
+        hiddenContainer.style.display = "block";
+    }
+})
+
+input.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        window.location='results.html'
+    }
+}, false)
 
 menu.addEventListener("click", function(event) {
     event.cancelBubble = true
@@ -47,3 +66,20 @@ window.addEventListener('resize', function(event){
     hiddenMenu.style.display = "none";
     hiddenDiv.style.display = "none";
 });
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
