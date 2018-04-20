@@ -8,13 +8,12 @@ body {
     padding: 0;
     font-size: 100%;
     font-family: Arial, sans-serif;
-    color: #492617;
     background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #d5d5d5 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#d5d5d5 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 0%,#d5d5d5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d5d5d5',GradientType=0 ); /* IE6-9 */
-    min-width: 265px !important;
+    min-width: 265px;
  
 }
 
@@ -83,23 +82,43 @@ input[name='search'] {
     width: 80%;
     margin: 0 auto;
 }
-.adv-search {
+.adv-search{
     float: right;
     cursor: pointer;
     color: rgb(0, 0, 238);
     margin: 0px;
-    text-decoration: underline;
+    margin-bottom: -5px;
+}
+.search-btn{
+    float: left;
+    cursor: pointer;
+    width: 50px;
+    color: rgb(0, 0, 238);
+    margin: 0px;
+    margin-bottom: -5px;
 }
 
 .hidden-container {
     width: 80%;
     margin: 0 auto;
-    background: black;
-    color: white;
     display: none
 }
-.hidden-container p{
-    display: block;
+
+form select {
+    width: 245.3px;
+}
+form div:last-child{
+    margin-bottom: 20px;
+}
+
+form div {
+    float: left;
+}
+
+.result-answer {
+    clear: both;
+    margin: 0;
+    margin-top: 40px;
 }
 
 header nav {
@@ -203,10 +222,7 @@ nav a {
 }
 
 .ad-heading {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    margin-top: 5px;    
 }
 
 .ad-price, 
@@ -229,76 +245,6 @@ nav a {
 [title~=Телефон]{
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-@media all and (max-width: 960px) {
-    .wrapper {
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 770px) {
-    .col-hide-me {
-        display: none;
-    }
-}
-
-/* @media all and (max-width: 540px) {
-    a.menu {
-        display: block;
-        font-size: 15px;
-    }
-    .nav-hide-me {
-        display: none;
-    }
-    .hidden-menu {
-        display: none;
-    }
-    header { 
-        height: 80px
-    }
-} */
-
-@media all and (max-width: 550px) {
-    .googleMap, .info, .media{
-        width:150px;
-        height:150px;
-        margin: 0 auto;  
-    }
-    footer .wrapper {
-        height: 300px;
-    }
-    .cols .col {
-        padding: 0;
-    }
-    .media {
-        width: 100px;
-    }
-    .logo {
-        margin-left: 0px;
-    }
-    .user {
-        margin-right: 0px;
-    }
-    .wrapper {
-        padding: 20px 0;
-    }
-}
-
-@media all and (max-width: 410px) {
-    a.menu {
-        display: block;
-        font-size: 15px;
-    }
-    .nav-hide-me {
-        display: none;
-    }
-    .hidden-menu {
-        display: none;
-    }
-    header { 
-        height: 80px
-    }
 }
 
 .menu {
@@ -331,4 +277,90 @@ nav a {
 }
 .profile li a:hover {
     color: #c65afc
+}
+
+.results {
+    padding: 0;
+}
+.results > .ad {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.results > .ad:last-child {
+    margin-bottom: 0;
+}
+
+.sort-ads, .other-ads {
+    float: right;
+    bottom: 20px;
+    position: relative;
+}
+
+.sort-ads select, .other-ads select{
+    width: 132px;
+}
+
+.lastads {
+    margin-top: 40px; 
+}
+
+@media all and (max-width: 960px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 770px) {
+    .col-hide-me {
+        display: none;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .googleMap, .info, .media{
+        width:150px;
+        height:150px;
+        margin: 0 auto;  
+    }
+    footer .wrapper {
+        height: 300px;
+    }
+    .cols .col {
+        padding: 0;
+    }
+    .media {
+        width: 100px;
+    }
+    .logo {
+        margin-left: 0px;
+    }
+    .user {
+        margin-right: 0px;
+    }
+    .wrapper {
+        padding: 20px 0;
+    }
+    form select {
+        width: 252px;
+    }
+    .sort-ads, .other-ads {
+        bottom: 0;
+    }
+}
+
+@media all and (max-width: 410px) {
+    a.menu {
+        display: block;
+        font-size: 15px;
+    }
+    .nav-hide-me {
+        display: none;
+    }
+    .hidden-menu {
+        display: none;
+    }
+    header { 
+        height: 80px
+    }
 }

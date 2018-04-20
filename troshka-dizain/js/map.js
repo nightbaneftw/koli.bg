@@ -14,6 +14,7 @@ var hiddenMenu = document.querySelector(".hidden-menu");
 var input = document.querySelector('input[name="search"]');
 var advSearch = document.querySelector(".adv-search");
 var hiddenContainer = document.querySelector(".hidden-container");
+var searchBtn = document.querySelector(".search-btn");
 
 advSearch.addEventListener("click", function(event) {
     if (hiddenContainer.style.display === "block") {
@@ -23,6 +24,10 @@ advSearch.addEventListener("click", function(event) {
         event.preventDefault();
         hiddenContainer.style.display = "block";
     }
+})
+
+searchBtn.addEventListener("click", function(event) {
+    window.location='results.html'
 })
 
 input.addEventListener("keydown", function(event) {
@@ -76,9 +81,12 @@ $('.owl-carousel').owlCarousel({
             items:1
         },
         600:{
+            items:1
+        },
+        700:{
             items:2
         },
-        1000:{
+        900:{
             items:3
         }
     }
